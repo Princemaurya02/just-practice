@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crowd Prediction | Nexora</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/prediction.css">
+</head>
+<body>
+
+<h2>🚍 Public Transport Crowd Prediction</h2>
+
+<div class="predict-box">
+
+  <!-- Route -->
+  <label>Route Type</label>
+  <select id="route">
+    <option value="high">Main Route (Business Area)</option>
+    <option value="medium">Normal Route</option>
+    <option value="low">Residential Route</option>
+  </select>
+
+  <!-- Time -->
+  <label>Select Time</label>
+  <input type="time" id="timeInput">
+  <p id="timeSlot"></p>
+
+  <!-- Day -->
+  <label>Day Type</label>
+  <select id="day">
+    <option value="weekday">Weekday</option>
+    <option value="weekend">Weekend</option>
+  </select>
+
+  <!-- Weather -->
+  <label>Weather</label>
+  <select id="weather">
+    <option value="normal">Normal</option>
+    <option value="rain">Rainy</option>
+    <option value="extreme">Extreme</option>
+  </select>
+
+  <!-- Holiday -->
+  <label>Holiday</label>
+  <select id="holiday">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+  </select>
+
+  <!-- Event -->
+  <label>Special Event Nearby</label>
+  <select id="event">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+  </select>
+
+  <button onclick="predictCrowd()">🔍 Predict Crowd</button>
+
+  <h3 id="result"></h3>
+  <p id="reason"></p>
+
+</div>
+
+<script src="js/prediction.js"></script>
+</body>
+</html>

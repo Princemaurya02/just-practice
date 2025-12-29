@@ -1,0 +1,11 @@
+:root {
+  --bg: #f9fafb;
+  --text: #111827;
+  --card: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --card: #1e293b;
+}

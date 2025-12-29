@@ -1,0 +1,51 @@
+.page-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.card.high span {
+  color: red;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px 40px;
+}
+
+.chart-box {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.chart-box h3 {
+  margin-bottom: 15px;
+}

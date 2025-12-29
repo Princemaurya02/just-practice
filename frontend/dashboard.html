@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nexora Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2 class="page-title">📊 Nexora Transport Dashboard</h2>
+
+<!-- SUMMARY CARDS -->
+<div class="cards">
+  <div class="card">
+    🚍 Active Routes
+    <span>24</span>
+  </div>
+
+  <div class="card high">
+    👥 Current Crowd
+    <span>HIGH</span>
+  </div>
+
+  <div class="card">
+    ⏱ Peak Time
+    <span>08:00 – 10:00</span>
+  </div>
+
+  <div class="card">
+    🌧 Weather
+    <span>Rainy</span>
+  </div>
+</div>
+
+<!-- GRAPHS SECTION -->
+<div class="charts">
+
+  <div class="chart-box">
+    <h3>📈 Crowd Level – Time Series</h3>
+    <canvas id="timeSeriesChart"></canvas>
+  </div>
+
+  <div class="chart-box">
+    <h3>📉 Daily Crowd Trend</h3>
+    <canvas id="lineChart"></canvas>
+  </div>
+
+</div>
+
+<script src="js/charts.js"></script>
+
+</body>
+</html>
