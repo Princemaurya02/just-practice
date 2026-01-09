@@ -6,10 +6,6 @@ from config import prediction_collection
 app = Flask(__name__)
 CORS(app)  # Allow frontend requests
 
-
-# -----------------------------
-# CROWD PREDICTION LOGIC
-# -----------------------------
 def predict_crowd_logic(data):
     score = 0
     reasons = []
